@@ -1,0 +1,60 @@
+/* Estilos base: Teléfonos */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    text-align: center;
+  }
+  
+  header, footer {
+    background-color: #333;
+    color: white;
+    padding: 15px;
+  }
+  
+  .pantalla{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 15px;
+    padding: 15px;
+  }
+  
+  .cuadro {
+    background-color: white;
+    padding: 30px;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    font-weight: bold;
+  }
+  
+  /* Tabletas (768px - 1279px) */
+  @media (min-width: 768px) and (max-width: 1279px) {
+    .pantalla{
+      grid-template-columns: repeat(2, 1fr);
+      background-color: aqua;
+    }
+  }
+  
+  /* HD (1280px - 1919px) */
+  @media (min-width: 1280px) and (max-width: 1919px) {
+    .pantalla{
+      grid-template-columns: repeat(3, 1fr);
+      max-width: 1200px;
+      margin: auto;
+      background-color: cadetblue;
+    }
+  }
+  
+  /* FHD (1920px en adelante) */
+  @media (min-width: 1920px) {
+    .pantalla{
+      grid-template-columns: repeat(4, 1fr);
+      max-width: 1400px;
+      margin: auto;
+    }
+  
+    .cuadro {
+      font-size: 1.3em;
+    }
+  }
+  
